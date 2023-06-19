@@ -1,13 +1,332 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 17vw;
+  height: 100vh;
+  background-color: black;
+  overflow-y: auto;
+  color: #fff;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  border-right: 0.1px dashed #a9a8a8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #000;
+}
+
+.logo {
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #fff;
+  padding: 10px;
+}
+
+.main {
+  width: 100%;
+  height: 50vh;
+  background-color: #000;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-style {
+  width: 200px;
+  height: 30px;
+  background-image: url("https://music-phinf.pstatic.net/20200620_15/1592637690919PFLOp_PNG/icon_special.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: contain;
+  bottom: 100px;
+  right: 30px;
+}
+.main-content {
+  margin-top: 50px;
+  width: 70%;
+  height: 300px;
+  /* background-color: #646cff */
+  position: relative;
+  left: 8%;
+  display: flex;
+}
+
+.main-content > .img-section {
+  width: 40%;
+  height: 300px;
+  background-color: red;
+  background-image: url(https://music-phinf.pstatic.net/20230614_10/16867235481538hovF_JPEG/%C4%BF%B9%F62.jpg?type=w840);
+  background-position: center;
+  background-size: cover;
+}
+.main-content > .text-section {
+  width: 60%;
+  height: 300px;
+  background-color: #ddd;
+  background-image: url(https://music-phinf.pstatic.net/20230614_104/1686723546358vcuQ6_JPEG/%C4%BF%B9%F61.jpg?type=f720_720_b50);
+  background-position: center;
+  color: #fff;
+}
+
+.title {
+  position: relative;
+  top: 90px;
+  left: 30px;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: bold;
+}
+.title2 {
+  position: relative;
+  top: 90px;
+  left: 30px;
+  max-height: 46px;
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 23px;
+  word-break: keep-all;
+}
+
+.main2 {
+  width: 100%;
+  height: 55vh;
+  /* background-color: #ddd; */
+  display: flex;
+  justify-content: center;
+}
+.slider {
+  width: 100%;
+  height: 400px;
+  background-color: red;
+}
+.slider-img {
+  width: 310px;
+  height: 310px;
+  border-radius: 10px;
+}
+
+.main-slider {
+  width: 100%;
+  height: 310px;
+
+  /* background-color: red; */
+}
+.prev {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  top: 250px;
+  z-index: 99;
+  background-color: #222;
+  right: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.next {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  top: 200px;
+  z-index: 99;
+  background-color: #222;
+  left: 97%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+.main-content2 {
+  width: 70%;
+  height: 500px;
+  /* background-color: #646cff; */
+  position: relative;
+  left: 10%;
+}
+
+.slider-text {
+  width: 100%;
+  height: 40px;
+  background-color: #727171;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-posi {
+  position: relative;
+  width: auto;
+  height: 20px;
+  top: 12%;
+  right: 62%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.side-list {
+  display: block;
+  position: absolute;
+  top: 73px;
+  padding: 0 16px 0 24px;
+  font-size: 14px;
+  line-height: 1.25em;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.side-content {
+  text-decoration: none;
+  width: 100%;
+  height: 20px;
+  display: block;
+  color: #fff;
+  margin-top: 1px;
+  opacity: 1;
+  font-size: 20px;
+  padding: 12px;
+  transition: 1s;
+}
+
+.side-content :hover {
+  color: rgb(233, 51, 85);
+  font-size: 23px;
+  opacity: 1;
+}
+.icon-margin {
+  margin-right: 10px;
+}
+
+.extra-menu {
+  width: 100%;
+  height: 200px;
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.extra-content {
+  width: 80%;
+  height: 60%;
+  border-top: 0.1px solid #727171;
+  border-bottom: 0.1px solid #727171;
+  opacity: 0.9;
+}
+.extra-content > h1 {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 700;
+
+  opacity: 0.8;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.extra-content > h1:hover {
+  opacity: 1;
+  font-size: 19px;
+}
+
+.auth {
+  width: 100%;
+  height: 100px;
+  padding: 0 16px 0 30px;
+  margin-top: 0;
+}
+
+.login-btn {
+  width: 180px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  color: white;
+  transition: border-color 0.25s;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  border-color: #646cff;
+}
+
+.login-btn:focus,
+.login-btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.login {
+  color: #1a1a1a;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #646cff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-cover {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+.login-Form {
+  width: 50%;
+  height: 600px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.contect {
+  width: 100%;
+  height: 50px;
+  /* background-color: blue; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 21px;
+}
+
+.login-exit {
+  position: relative;
+  left: 95%;
+  top: 3%;
+}
+.main-content3 {
+  width: 70%;
+  height: 500px;
+  background-color: #646cff;
+  position: relative;
+  left: 10%;
+  margin-top: 80px;
+}
+.title-posi3 {
+  position: relative;
+  width: auto;
+  height: 20px;
+  top: 13%;
+  right: 62%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }

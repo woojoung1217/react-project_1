@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable */
+import React from "react";
+import SideMenu from "./Components/sidebar";
+import Main from "./Components/Main";
+import LoginSection from "./Components/login";
+import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import AppRouter from "./Components/Router";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Main></Main>}></Route>
+      </Routes>
+      <AppRouter></AppRouter>
     </div>
   );
 }
